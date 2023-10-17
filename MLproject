@@ -1,0 +1,10 @@
+name: Logistic Regression
+python_env: python_env.yaml
+entry_points:
+    main:
+        parameters:
+            C: {type: float, default: 1.0}
+            penalty: {type: str, default: 'l2'}
+            max_iter: {type: int, default: 100}
+        command: python3 entrena.py --C={C} --penalty={penalty} --max_iter={max_iter}
+
